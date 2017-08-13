@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="container">
+		<br>
+		<center>
+			<input type="text" class="form-control" placeholder="Judul Keluhan" id="reportTitle"><br>
+			<input type="text" class="form-control" placeholder="Nama Pengirim" id="reportSender"><br>
+			<textarea class="form-control" id="reportText" cols="30" rows="10" placeholder="Isi Keluhan"></textarea><br>
+			<select class="form-control" id="reportTarget">
+				<option value="manager">a. Manager Bandara</option>
+				<option value="maskapai">b. Maskapai</option>
+				<option value="kemenhub">c. Kementerian Perhubungan</option>
+				<option value="ylki">d. YLKI (Yayasan Lembaga Konsumen Indonesia)</option>
+				<option value="keluarga">e. Keluarga</option>
+			</select>
+		</center>
+		<br><br>
+		<center>
+			<button class="btn btn-primary btn-lg" onclick="submitReport()">Submit</button>
+		</center>
+	</div>
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/4.2.0/firebase.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>
